@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#f6f7faf9">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Shared Preferences Login"
+        android:textSize="20px"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/usertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:text="USERNAME"
+        android:textSize="20px" />
+
+    <EditText
+        android:id="@+id/userinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/usertext"
+        android:layout_toRightOf="@+id/usertext" />
+
+    <TextView
+        android:id="@+id/userpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="PASSWORD"
+        android:textSize="20px"
+        android:layout_below="@+id/usertext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/passinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userpass"
+        android:layout_toRightOf="@+id/userpass"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="138dp"
+        android:text="Submit"
+        android:layout_below="@+id/userpass"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_alignBottom="@+id/submit"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_alignRight="@+id/passinput"
+        android:layout_alignEnd="@+id/passinput" />
+
+
+
+
+
+</RelativeLayout>
